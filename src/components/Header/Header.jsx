@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import Cart from '../Shopping-cart/Cart'
+import Cart from '../Shopping-cart/Cart/Cart'
 import './Header.css'
 
 const Header = () => {
@@ -8,9 +8,7 @@ const Header = () => {
             <NavLink to='/' className="header_games">
                 Games
             </NavLink>
-            <NavLink to='cart' className="header_cart">
-                <Cart />
-            </NavLink>
+            <Cart />
         </div>
     </div>
 }
